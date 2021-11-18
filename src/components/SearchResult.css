@@ -1,0 +1,170 @@
+.search-result {
+  min-height: 100vh;
+  margin-top: 160px;
+}
+
+.search-result .desc {
+  background-image: linear-gradient(135deg, #4568DC, #B06AB3);
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-bottom: 30px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, .35) 0 5px 15px;
+}
+
+@media (max-width: 1000px) {
+  .search-result .desc {
+    flex-direction: column;
+  }
+}
+
+.search-result .desc .left {
+  width: 50%;
+  margin: auto;
+}
+
+.search-result .desc .left img {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .search-result .desc {
+    width: 80%;
+  }
+
+  .search-result .desc .back-btn {
+    width: 5vw;
+    height: 5vw;
+    font-size: 2vw;
+  }
+}
+
+.search-result .desc .right {
+  margin: auto;
+  padding: 20px;
+}
+
+.search-result .desc .right h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.search-result .movie {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-result .movie .card {
+  width: 300px;
+  height: 550px;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+}
+
+.search-result .movie .card .card-body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.search-result .movie .card .card-body .poster {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.search-result .movie .card .card-body .title {
+  margin: 15px 0;
+}
+
+.search-result .movie .card .card-body span {
+  margin: 20px;
+}
+
+.search-result .movie .card .card-body span .fa {
+  color: #864BD8;
+}
+
+.search-result .movie .card .card-body .btn-container {
+  flex-direction: row;
+}
+
+.search-result .movie .card .card-body .btn-container .detail-btn, .search-result .movie .card .card-body .btn-container .add-wishlist-btn {
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  height: 40px;
+  margin: 0 10px 5px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-result .movie .card .card-body .btn-container .detail-btn:hover, .search-result .movie .card .card-body .btn-container .add-wishlist-btn:hover {
+  background-image: linear-gradient(45deg, #4568DC, #B06AB3);
+  color: #fff;
+}
+
+.search-result .message {
+  background-image: linear-gradient(45deg, #4568DC, #B06AB3);
+  color: #fff;
+  width: auto;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  left: 20px;
+  bottom: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+  border: none;
+  outline: none;
+}
+
+.search-result .message button {
+  background-color: transparent;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-result .close-btn {
+  background-color: #fff;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  margin: auto auto 0 auto;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-result .close-btn:hover {
+  background-image: linear-gradient(45deg, #4568DC, #B06AB3);
+  color: #fff;
+}

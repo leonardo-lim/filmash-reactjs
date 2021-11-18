@@ -1,0 +1,57 @@
+.footer {
+  background-image: linear-gradient(45deg, #4568DC, #B06AB3);
+  color: #fff;
+  padding: 50px 0;
+  position: relative;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.footer .copyright {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer .icon {
+  width: 35px;
+  height: 35px;
+  margin: 0 20px;
+  display: inline-block;
+  line-height: 35px;
+  border-radius: 10px;
+}
+
+.footer .icon:hover {
+  background-color: #fff;
+}
+
+.footer .icon:hover a {
+  color: #864BD8;
+}
+
+.footer .icon a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer .up-btn {
+  background-color: transparent;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer .up-btn:hover {
+  background-color: #fff;
+  color: #864BD8;
+}

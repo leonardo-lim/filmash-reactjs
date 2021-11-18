@@ -1,0 +1,61 @@
+.modal {
+  background-color: rgba(255, 255, 255, .9);
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  overflow: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, .35) 0 5px 15px;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal .left {
+  margin: auto 20px;
+}
+
+.modal .left .poster {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.modal .right {
+  width: 60%;
+  margin: auto 20px;
+}
+
+.modal .right hr {
+  margin: 10px 0;
+}
+
+@media (max-width: 400px) {
+  .modal {
+    width: 70%;
+    height: 70%;
+  }
+
+  .modal .left .poster {
+    width: 225px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .modal .right {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+  }
+}
